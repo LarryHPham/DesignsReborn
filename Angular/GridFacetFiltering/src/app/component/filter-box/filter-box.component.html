@@ -1,0 +1,9 @@
+<ul class="filters-display">
+  <ng-template ngFor let-brand [ngForOf]="filters">
+    <ng-template ngFor let-item [ngForOf]="brand.data">
+      <li *ngIf="item.filterActive" class="filters-item">
+        <label><input type="checkbox" [(ngModel)]="item.filterActive" (change)="filterActive($event)" attr.name="{{brand.type}}" value="{{item.filterName}}"/>{{item.filterName | textCase}}<i class="fa fa-close"></i></label>
+      </li>
+    </ng-template>
+  </ng-template>
+</ul>

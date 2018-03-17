@@ -1,0 +1,13 @@
+html {
+  height: 100%;
+  min-height: 100%;
+  font-size: 16px; /* font size that controls all font-size: @.@rem */
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  color:#000000;
+  margin: 0;
+  position: relative;
+}

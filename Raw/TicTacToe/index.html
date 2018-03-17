@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TicTacToe</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="styles.css "rel="stylesheet" />
+</head>
+<body>
+  <div class="row">
+    <div class="header-text">
+      <h1>Tic Tac Toe</h1>
+    </div>
+  </div>
+  <div class="row">
+    <ul class="game-box" id="game">
+      <li class="game-cube" id="1" onClick="icon(this.id)"><div class="game-block"></div></li>
+      <li class="game-cube" id="2" onClick="icon(this.id)"><div class="game-block"></div></li>
+      <li class="game-cube" id="3" onClick="icon(this.id)"><div class="game-block"></div></li>
+      <li class="game-cube" id="4" onClick="icon(this.id)"><div class="game-block"></div></li>
+      <li class="game-cube" id="5" onClick="icon(this.id)"><div class="game-block"></div></li>
+      <li class="game-cube" id="6" onClick="icon(this.id)"><div class="game-block"></div></li>
+      <li class="game-cube" id="7" onClick="icon(this.id)"><div class="game-block"></div></li>
+      <li class="game-cube" id="8" onClick="icon(this.id)"><div class="game-block"></div></li>
+      <li class="game-cube" id="9" onClick="icon(this.id)"><div class="game-block"></div></li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <div class="players">
+      <div class="players-box" id="computer" onClick="playerIcon(this)">
+        <div class="player">
+          <i class="fa fa-train fa-5x"></i>
+          <p>Computer Player</p>
+        </div>
+      </div>
+      <div class="players-box"><div class="player-text" id="text">Choose who goes First</div></div>
+      <div class="players-box" id="user" onClick="playerIcon(this)">
+        <div class="player">
+          <i class="fa fa-user fa-5x"></i>
+          <p>Human Player</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="tictactoe.js"></script>
+</body>
+</html>

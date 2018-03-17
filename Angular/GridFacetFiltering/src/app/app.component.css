@@ -1,0 +1,82 @@
+.gff-container {
+  border: 1px solid #000000;
+  background-color: #1C212A;
+  color: #ffffff;
+}
+
+.gff-container h1 {}
+
+.filters {
+  margin-bottom: 15px;
+}
+
+.gff-total{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #028ACF;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.gff-logo {
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #000000;
+}
+
+.gff-logo-image {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  vertical-align: top;
+  opacity: .85;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.gff-box {
+  min-height: 300px;
+  /* border: 1px solid #000000; */
+}
+
+.facet-content {
+  margin-bottom: 15px;
+}
+
+.facet-filters {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #2E3747;
+  border: 1px solid #000000;
+}
+
+.list-container {
+  width: 100%;
+  height:100%;
+  border: 1px solid #000000;
+}
+
+.list-container-scroll {
+  width: 100%;
+  height: 100%;
+  max-height: 1000px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 1px solid #000000;
+}

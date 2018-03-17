@@ -1,0 +1,10 @@
+<div class="facets">
+  <section class="facets-category">
+    <ng-template ngFor let-brand [ngForOf]="filters">
+      <h4>{{brand.type}}</h4>
+      <div *ngFor="let item of brand.data">
+        <label><input type="checkbox" [(ngModel)]="item.filterActive" (change)="filterActive($event)" attr.name="{{brand.type}}" value="{{item.filterName}}"/> {{item.filterName | textCase}} <span *ngIf="item.filterCount > 0">({{item.filterCount}})</span></label>
+      </div>
+    </ng-template>
+  </section>
+</div>

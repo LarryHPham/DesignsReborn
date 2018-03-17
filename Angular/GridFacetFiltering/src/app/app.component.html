@@ -1,0 +1,24 @@
+<div class="container-fluid gff-container">
+  <h1>Grid Facet Filtering</h1>
+  <div class="row no-gutters filters">
+    <div class="col-md-3 gff-logo">
+      <div class="gff-total" *ngIf="displayItems">
+        TOTAL: {{displayItems.length}}
+      </div>
+      <img class="gff-logo-image embed-responsive-16by9" src='./assets/job-placement-img.jpg' alt="placeholder"/>
+    </div>
+    <filter-box *ngIf="categoryFilters" class="col-md-9" [filters]="categoryFilters" (filterCheckBox)="filterCheck($event)"></filter-box>
+  </div>
+  <div class="row no-gutters facet-content">
+    <aside class="facet-filters gff-box col-md-3">
+      <category-filters *ngIf="categoryFilters" [filters]="categoryFilters" (filterCheckBox)="filterCheck($event)"></category-filters>
+    </aside>
+    <div *ngIf="displayItems" class="col-md-9 list-container">
+      <div *ngIf="displayItems" class="list-container-scroll">
+        <ng-template ngFor let-item [ngForOf]="displayItems">
+          <item-template1 [item]="item"></item-template1>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>

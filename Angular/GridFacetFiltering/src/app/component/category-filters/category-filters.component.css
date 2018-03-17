@@ -1,0 +1,24 @@
+.facets {
+  color: #F7F7F8;
+}
+
+.facets-category {
+  font-size: 1.2em;
+}
+
+.facets-category label {
+  display: block;
+  margin: 10px 0;
+  line-height: 1.2;
+  cursor: pointer;
+  user-select: none;
+}
+
+.facets-group label:hover {
+  color: #0095CD;
+}
+
+.facets-group input[type=checkbox] {
+  position: relative;
+  top: 1.5px;
+}
