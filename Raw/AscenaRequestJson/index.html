@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Request.JSON V2</title>
+  <link rel=stylesheet href="style.css" />
+</head>
+
+<body>
+  <h2>Add a User:
+</h2>
+  <form id="add-user" method="POST">
+    <input type="text" id="name" name="username" placeholder="name" />
+    <input type="email" id="email" name="email" placeholder="email" />
+    <button id="btn" onclick="submitForm();return false;">add user</button>
+  </form>
+  <div id="errors"></div>
+  <h2>Users:
+</h2>
+  <ul id="users">
+  </ul>
+
+  <script src="test.js"></script>
+</body>
+
+</html>

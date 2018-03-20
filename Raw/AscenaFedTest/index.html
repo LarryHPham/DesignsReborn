@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FED Test HTML & CSS V2</title>
+  <link rel=stylesheet href="style.css"/>
+</head>
+<body>
+  <script src="https://use.typekit.net/rzv2mwh.js"></script>
+  <script>
+    try {
+      Typekit.load();
+    } catch (e) {}
+
+  </script>
+
+  <div class="container">
+    <h1>Recreate this using HTML &amp; CSS</h1>
+    <img src="https://s3.amazonaws.com/f.cl.ly/items/2z3C3Z0L2Q0R282p1V0z/Image%202014-12-19%20at%2010.07.09%20AM.png" width="303" />
+
+    <!-- Your HTML goes here-->
+    <!-- Make it responsive, ok to increase spacing etc. use your judgement -->
+    <!-- Make the 'why give $50' a responsive modal with any content -->
+    <!-- Do not use any external Libraries, must be coded from scratch e.g. No bootstrap -->
+    <!-- Add some JS functionality e.g. make progress bar move when adding dollar amount -->
+  </div>
+  <hr />
+  <div class="box-container">
+    <div class="donation-needed"><span id="needs">$500 still needed for this project</span><div class="arrow-down"></div></div>
+    <div class="donation-box">
+      <div class="progress-bar"><div id="progress"></div></div>
+      <div class="donation-form">
+
+        <div class="donation-timelimit">
+          <span id="timeLimit">Only 2 days left</span>
+          <span> to fund this project.</span>
+        </div>
+
+        <p>
+          Join the <span id="donors">0</span> other donors who have already supported this project. Every dollar helps;
+        </p>
+
+        <div class="donation-input">
+          <div class="donation-field">
+            <span>$</span>
+            <input id="donate" type="text" placeholder="Amount"/>
+          </div>
+          <div class="donation-give" onClick="updateDonation()">
+            Give Now
+          </div>
+        </div>
+
+        <div id="modalBtn" class="modal-btn">
+          <i>Why give $50?</i>
+        </div>
+      </div>
+    </div>
+
+    <div class="donate-share">
+      <div class="donate-save">Save for later</div>
+      <div class="donate-tell">Tell your friends</div>
+    </div>
+  </div>
+
+  <div id='modal-donate' class="modal">
+    <div class="modal-content">
+      <div class="modal-header"><span class="close">&times;</span></div>
+      <img src="https://media1.tenor.com/images/cf488db813bd016fee53965934094113/tenor.gif?itemid=10590115" width="80%" />
+      <div class="modal-text">
+        PLEEAASSE! I need moonies to create LitterBox300!
+      </div>
+    </div>
+  </div>
+  <script src="test.js"></script>
+</body>
+</html>

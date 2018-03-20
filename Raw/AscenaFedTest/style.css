@@ -1,0 +1,254 @@
+/* Global resets */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  color: #424242;
+  line-height: 1.4;
+}
+
+/* Fonts */
+
+h1 {
+  font-family: "rooney-web", 'AmericanTypewriter', Rockwell, serif;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.container {
+  margin: 2em auto;
+  max-width: 630px;
+  text-align: center;
+}
+
+/* COLORS:
+  blue: #20A1D4;
+  green: #1CBC2C;
+  orange: #EF5F3C;
+  black: #424242;
+  grey: #777;
+  light grey: #eaeaea;
+*/
+
+/* Your CSS goes here */
+
+.box-container {
+  width: 42%;
+  margin: 2em auto;
+}
+
+.donation-needed {
+  width: 100%;
+  color: #fff;
+  background-color: #424242;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 1em;
+  position: relative;
+}
+
+.donation-box {
+  width: 100%;
+  color: #777;
+  border: 1px solid #777;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 15px;
+  background-color: #eaeaea;
+  border-bottom: 1px solid #777;
+}
+
+.donation-form {
+  width: 100%;
+  padding: 1em;
+}
+
+.donation-form p {
+  font-size: 12px;
+  padding-right: 2em;
+  margin-top: 1em;
+  line-height: 1.5em;
+}
+
+.donation-timelimit {
+  font-size: 12px;
+  padding-right: 2em;
+}
+
+.donation-input {
+  width: 100%;
+  font-size: 18px;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.donation-field {
+  width: 46%;
+  padding: .5em;
+  font-weight: bold;
+  border-radius: 3px;
+  border: 1px solid #424242;
+  white-space: nowrap;
+  overflow: hidden;
+  user-select: none;
+}
+
+.donation-input input {
+  width: 90%;
+  color: #424242;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  vertical-align: middle;
+}
+
+.donation-give {
+  width: 46%;
+  padding: .5em;
+  text-align: center;
+  background-color: #1CBC2C;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+
+.modal-btn {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #20A1D4;
+}
+
+.modal-btn i {
+  cursor: pointer;
+}
+
+.donate-share {
+  width: 100%;
+  font-size: 14px;
+  margin-top: .5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #424242;
+  text-align: center;
+  font-weight: bold;
+}
+
+.donate-save {
+  width: 46%;
+  height: 40px;
+  padding: 10px 0;
+  border: 1px solid #777;
+  background-color: #eaeaea;
+  cursor: pointer;
+}
+.donate-tell {
+  width: 46%;
+  height: 40px;
+  padding: 10px 0;
+  border: 1px solid #777;
+  background-color: #eaeaea;
+  cursor: pointer;
+}
+
+#progress {
+  width: 0%;
+  height: 100%;
+  background-color: #EF5F3C;
+  -webkit-transition: width .5s ease-in-out;
+  -moz-transition: width .5s ease-in-out;
+  -o-transition: width .5s ease-in-out;
+  transition: width .5s ease-in-out;
+}
+
+#timeLimit {
+  font-weight: bold;
+  color: #EF5F3C;
+}
+
+#donors {
+  font-weight: bold;
+}
+
+.arrow-down {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #424242;
+  right: 30px;
+  bottom: -7px;
+}
+
+/*** MODAL ***/
+
+/* The Modal (background) */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  position: relative;
+}
+
+.modal-content img{
+
+}
+
+.modal-header{
+  width: 100%;
+}
+
+.modal-text{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* The Close Button */
+
+.close {
+  display: inline-block;
+  text-align: right;
+  color: #424242;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  line-height: 0.8;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
