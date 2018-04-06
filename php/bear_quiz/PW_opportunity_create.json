@@ -1,0 +1,24 @@
+{
+    "id": 4611763,
+    "name": "sell secretary supplies",
+    "assignee_id": null,
+    "close_date": null,
+    "company_id": 14112112,
+    "company_name": "Dunder Mifflin (sample)",
+    "customer_source_id": null,
+    "details": null,
+    "loss_reason_id": null,
+    "pipeline_id": 304365,
+    "pipeline_stage_id": 1412533,
+    "primary_contact_id": 32371868,
+    "priority": "None",
+    "status": "Open",
+    "tags": [],
+    "interaction_count": 0,
+    "monetary_value": null,
+    "win_probability": 5,
+    "date_created": 1499101425,
+    "date_modified": 1499101425,
+    "custom_fields": []
+}
+

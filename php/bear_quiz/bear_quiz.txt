@@ -1,0 +1,49 @@
+=Bear Group Developer Programming Quiz=
+
+The goal of this exercise is to verify general php ability and web fundamental knowledge. Prosperworks is a CRM system that integrates with Google's Apps to help manage contacts and a sales pipeline. It happens to have a nicely documented API and 14 day trial accounts so we will utilize that for our exercise. Firstly, although there is a 14 day trial, I have provided all the request/responses needed so you do not have to create an account if you do not want to. Include the api call that would be made, comment it out, and use the json data directly as the response. You should not need any additional libraries but if you want to leverage something from Symfony, Zend, or elsewhere you can.
+
+The Prosperworks trial account includes sample data with fictional company and characters from the show "The Office". Use the provided API documentation and sample request/responses to perform the following tasks to expand on that data. If you would like additional responses let me know what the request is and I will provide the response.
+
+This work should be done in a standalone php script that can be executed via "php -F bear_quiz.php". Ultimately we're more interested in reading the code than the results, so don't get too hung up on any one part and don't spend more than a few hours on the quiz. And don't hesitate to ask if you have any questions! It should go without saying, but just so we are clear: please work on this independently as you would for a work task. You can use internet resources of course, but refrain from posting to Stack Overflow, forums, or elsewhere as there should be ample guidance available if you need it.
+
+Tasks:
+1. Create new person "Pam Beesley" associated with company Dunder Mifflin. Use generic search result to find company, *not* passing criteria but looping through results instead.
+
+2. Update new record's name to "Pam Halpert"
+
+3. Create an opportunity to sell 20,000 post-it notes to Pam.
+
+
+
+API Documentation: https://www.prosperworks.com/developer_api
+
+Sample JSON Response Details, see .json for response contents:
+
+- companies search -
+endpoint:
+  https://api.prosperworks.com/developer_api/v1/companies/search
+
+- people search -
+endpoint:
+  https://api.prosperworks.com/developer_api/v1/people/search
+
+- people create -
+endpoint:
+  https://api.prosperworks.com/developer_api/v1/people/
+data:
+  name: "Pam Beesly"
+  company_id: 14112112
+
+- people update -
+endpoint:
+  https://api.prosperworks.com/developer_api/v1/people/32371868
+data:
+  name: "Pam Halpert"
+
+- opportunities create - 
+endpoint:
+  https://api.prosperworks.com/developer_api/v1/opportunities
+data:
+  name: "sell secratary supplies"
+  primary_contact_id: 32371868
+
